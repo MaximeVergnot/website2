@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form id="registrationForm">
+        <label for="username">Pseudo (6 caractères minimum) :</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Mot de passe (8 caractères minimum) :</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Vérification du mot de passe :</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <label>Choisissez une catégorie :</label>
+        <div>
+            <input type="radio" id="option1" name="category" value="option1" required>
+            <label for="option1">Option 1</label>
+        </div>
+        <div>
+            <input type="radio" id="option2" name="category" value="option2">
+            <label for="option2">Option 2</label>
+        </div>
+
+        <button type="submit">S'inscrire</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
